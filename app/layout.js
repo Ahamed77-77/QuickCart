@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import { AppContextProvider } from "@/context/AppContext";
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
           <AppContextProvider>
             {children}
           </AppContextProvider>
+          <SpeedInsights />
         </body>
       </html>
       </ClerkProvider>
